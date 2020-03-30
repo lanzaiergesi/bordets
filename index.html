@@ -65,7 +65,7 @@ body {
 .alert-btn {
 	display: block;
 	border-radius: 10px;
-	background-color: #72C47C;
+	background-color: #ff90037C;
 	height: 55px;
 	line-height: 55px;
 	width: 186px;
@@ -114,7 +114,11 @@ body {
 		<div id="js-alert-head" class="alert-head">正在跳转...</div>
 		<div class="alert-concent">
 		</div>
-
+<!--
+    		<a id="js-alert-btn" class="alert-btn" href="" style="width: 79px;float: left;">立刻学习</a>
+		<br/>
+		<a id="js-alert-btn" class="alert-btn" href="" style="float: left;width: 100%;">立即前往SK-Cloud</a>
+-->
 	</div>
 	<div class="alert-footer clearfix">
 		<svg width="46px" height="42px" class="alert-footer-icon">
@@ -132,7 +136,7 @@ body {
 function alertSet(e) {
     document.getElementById("js-alert-box").style.display = "block",
     document.getElementById("js-alert-head").innerHTML = e;
-    var t = 5,
+    var t = 3,
     n = document.getElementById("js-sec-circle");
     document.getElementById("js-sec-text").innerHTML = t,
     setInterval(function() {
